@@ -14,26 +14,15 @@
         <!-- Carga de modelos -->
         <a-assets>
             <a-asset-item id="museo-glb" src="museo.glb"></a-asset-item>
-            <!-- orden alfabético -->
-             
-            
-          
-            <!--minúsculas-->
-              
-           
+            <!-- Orden alfabético y minúsculas en nombres de archivos sugerido -->
         </a-assets>
 
         <!-- Modelo 3D del museo -->
-        <a-entity gltf-model="#museo-glb" scale="10 10 10" position="10 0 10" static-body>
-            <!-- Logos -->
-           
-            
-          
-            </a-entity>
-            <!-- Cámara dentro del museo con controles de mira y controles WASD -->
-             <a-entity camera look-controls wasd-controls="acceleration: 500" position="-200 10 -300"
-            rotation="0 0 0" dynamic-body look-at="190 10 -34"></a-entity>
-        </a-entity>
+        <a-entity gltf-model="#museo-glb" scale="10 10 10" position="10 0 10" static-body></a-entity>
+
+        <!-- Cámara dentro del museo con controles de mira y controles WASD -->
+        <a-entity camera look-controls wasd-controls="acceleration: 500" position="-200 10 -300"
+                  rotation="0 0 0" dynamic-body look-at="190 10 -34"></a-entity>
       
         <!-- Luz ambiente para iluminar el entorno -->
         <a-light type="ambient" color="#FFFFFF" intensity="0.5"></a-light>
@@ -42,10 +31,10 @@
         <a-light type="point" color="#FFFFFF" intensity="0.35" position="0 4 0"></a-light>
         <a-light type="point" color="#FFFFFF" intensity="0.35" position="10 4 0"></a-light>
         <a-light type="point" position="45 20 180" intensity="1.5" color="#FFFFFF" distance="50" decay="2"></a-light>
-
         <a-light type="point" color="#FFFFFF" intensity="0.35" position="-10 4 0"></a-light>
         <a-light type="point" color="#FFFFFF" intensity="0.35" position="0 4 10"></a-light>
         <a-light type="point" color="#FFFFFF" intensity="0.35" position="0 4 -10"></a-light>
     </a-scene>
 </body>
 </html>
+
