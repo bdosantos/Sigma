@@ -17,19 +17,18 @@
         <!-- Modelo 3D del museo y objetos internos -->
         <a-entity gltf-model="#museo-glb" scale="400 120 400">
             <!-- Aquí incluyes el resto de tus modelos -->
-        </a-entity>
+           <!-- Luz ambiente mejorada -->
+           <a-light type="ambient" color="#FFFFFF" intensity="0.3"></a-light>
 
-        <!-- Luz ambiente mejorada -->
-        <a-light type="ambient" color="#FFFFFF" intensity="0.3"></a-light>
+           <!-- Luz direccional suave para dar profundidad al suelo -->
+          <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 10 -10" target="0 0 0"></a-light>
 
-        <!-- Luz direccional suave para dar profundidad al suelo -->
-        <a-light type="directional" color="#FFFFFF" intensity="0.1" position="0 10 -10" target="0 0 0"></a-light>
-
-        <!-- Luces puntuales ajustadas para iluminar zonas específicas -->
-        <a-light type="point" color="#FFFFFF" intensity="0.4" position="0 5 -250"></a-light>
-        <a-light type="point" color="#FFFFFF" intensity="0.35" position="10 15 10"></a-light>
-        <a-light type="point" color="#FFFFFF" intensity="0.35" position="-10 15 -10"></a-light>
-        <a-light type="point" color="#FFFFFF" intensity="0.3" position="0 15 -20"></a-light>
+          <!-- Luces puntuales ajustadas para iluminar zonas específicas -->
+          <a-light type="point" color="#FFFFFF" intensity="0.4" position="0 5 -250"></a-light>
+          <a-light type="point" color="#FFFFFF" intensity="0.35" position="10 15 10"></a-light>
+          <a-light type="point" color="#FFFFFF" intensity="0.35" position="-10 15 -10"></a-light>
+          <a-light type="point" color="#FFFFFF" intensity="0.3" position="0 15 -20"></a-light>
+     </a-entity>
     </a-scene>
 </body>
 </html>
