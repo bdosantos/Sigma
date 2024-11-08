@@ -11,14 +11,15 @@
     <a-scene>
         <!-- Carga de modelos -->
         <a-assets>
-            <a-asset-item id="museo-glb" src="museo.glb">
+            <a-asset-item id="museo-glb" src="museo.glb"></a-asset-item>
         </a-assets>
 
         <!-- Modelo 3D del museo y objetos internos -->
         <a-entity gltf-model="#museo-glb" scale="400 120 400">
             <!-- Luz ambiental con intensidad baja para evitar sobreiluminar las paredes -->
             <a-light type="ambient" color="#FFFFFF" intensity="0.1"></a-light>
-             <!-- Cámara dentro del museo con controles de mira y controles WASD -->
+
+            <!-- Cámara dentro del museo con controles de mira y controles WASD -->
             <a-entity camera look-controls wasd-controls position="-80 60 -100"></a-entity>
 
             <!-- Luz direccional baja para iluminar el suelo sin afectar mucho a las paredes -->
@@ -33,6 +34,3 @@
     </a-scene>
 </body>
 </html>
-
-
-
