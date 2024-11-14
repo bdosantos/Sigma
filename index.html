@@ -20,8 +20,6 @@
             <a-light type="ambient" color="#FFFFFF" intensity="0.35"></a-light>
 
             <!-- Cámara dentro del museo con controles de mira y controles WASD -->
-            
-          <!-- Cámara dentro del museo con controles de mira y controles WASD -->
             <a-entity camera look-controls wasd-controls="acceleration: 150" position="80 60 100"></a-entity>
 
             <!-- Luz direccional baja para iluminar el suelo sin afectar mucho a las paredes -->
@@ -33,6 +31,13 @@
             <a-light type="point" color="#FFFFFF" intensity="0.35" position="-100 50 -100" distance="400"></a-light>
             <a-light type="point" color="#FFFFFF" intensity="0.3" position="0 50 -200" distance="300"></a-light>
         </a-entity>
+
+        <!-- Integración del juego de Scratch en un plano dentro de la escena -->
+        <a-entity position="0 5 -10">
+            <a-plane material="shader: html; target: #scratch-iframe;" width="4.85" height="4.02"></a-plane>
+            <iframe id="scratch-iframe" src="https://scratch.mit.edu/projects/1085906128/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="display: none;"></iframe>
+        </a-entity>
     </a-scene>
 </body>
 </html>
+
